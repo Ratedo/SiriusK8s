@@ -143,6 +143,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+
   ingressClassName: nginx
   rules:
   - host: webapp.local
@@ -177,7 +178,6 @@ curl webapp.local/api    # → Hello from API
 # Посмотреть Ingress Controller поды
 kubectl get pods -n ingress-nginx
 ```
-
 ---
 
 ### Блок 4 — Сравнение типов Service (10 мин)
